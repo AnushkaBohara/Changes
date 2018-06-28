@@ -21,10 +21,10 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        phoneNo = (EditText) findViewById(R.id.mobile);
+        phoneNo = findViewById(R.id.mobile);
         mobileNumber = phoneNo.toString();
 
-        signIn = (Button) findViewById(R.id.sign_in);
+        signIn = findViewById(R.id.sign_in);
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,8 +32,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.putString("Mobile", mobileNumber);
                 editor.commit();
-                Intent billingIntent = new Intent(RegistrationActivity.this, BillingActivity.class);
-                startActivity(billingIntent);
+                Intent homeIntent = new Intent(RegistrationActivity.this, HomeActivity.class);
+                startActivity(homeIntent);
                 finish();
             }
         });

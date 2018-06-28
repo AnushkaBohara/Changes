@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/cardview_id"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/store_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/Store_name"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/date_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Date_purchase"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/amount_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/Amount"
+            android:textColor="@color/colorPrimary"/>
+
+
+
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:id="@+id/new_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="142dp"
+            android:gravity="center"
+            android:text="@string/New_bill"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>
+

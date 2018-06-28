@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -22,13 +23,15 @@ public class BillingActivity extends AppCompatActivity {
     String itemCode;
     LinearLayout cart;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_billing);
         setTitle("Billing Activity");
 
-        add_item = (Button) findViewById(R.id.scan);
+
+        add_item = findViewById(R.id.scan);
         add_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +77,7 @@ public class BillingActivity extends AppCompatActivity {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (result != null) {
             itemCode = result.getContents();
-            cart = (LinearLayout) findViewById(R.id.cart);
+            cart = findViewById(R.id.cart);
             LinearLayout product = new LinearLayout(this);
 
         }

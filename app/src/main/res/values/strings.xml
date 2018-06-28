@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">MyProject</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Sign_in">Sign in</string>
+    <string name="EnterPhone">Enter your phone number: </string>
+    <string name="ViewBill">View your purchase history</string>
+    <string name="FindStore">Start shopping!</string>
+    <string name="Add_item">Add new item</string>
+    <string name="New_bill">New Bill</string>
+    <string name="Item">item</string>
+    <string name="Store_name">Store name</string>
+    <string name="Date_purchase">DD-MM-YYYY</string>
+    <string name="Amount">Rs.1000</string>
+    <string name="product_title">Product title</string>
+    <string name="product_desc">Product description</string>
+
+
 </resources>

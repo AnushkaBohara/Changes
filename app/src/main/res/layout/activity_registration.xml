@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:orientation="vertical"
     tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/EnterPhone" />
 
     <EditText
         android:id="@+id/mobile"
@@ -20,7 +27,7 @@
         android:id="@+id/sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign In" />
+        android:text="@string/Sign_in" />
 
 
 </LinearLayout>
